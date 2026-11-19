@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Страница-1" id="oUbhs_hRwhw82C-a3kBz">
+    <mxGraphModel dx="1538" dy="1117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="box_a0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="Обеспечивать функционирование&#xa;сети платных автодорог" vertex="1">
+          <mxGeometry height="150" width="320" x="380" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="num_a0" parent="1" style="text;html=1;align=right;verticalAlign=bottom;fontStyle=1;fontSize=12;" value="A0" vertex="1">
+          <mxGeometry height="20" width="35" x="660" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="in1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0;entryY=0.3;align=center;verticalAlign=bottom;" target="box_a0" value="Транспортное средство">
+          <mxGeometry relative="1" x="-0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="120" y="315" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0;entryY=0.7;align=center;verticalAlign=bottom;" target="box_a0" value="Заявка клиента">
+          <mxGeometry relative="1" x="-0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="120" y="375" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.3;entryY=0;align=left;verticalAlign=middle;" target="box_a0" value="Тарифная политика">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="476" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.72;entryY=0;align=left;verticalAlign=middle;" target="box_a0" value="Нормативные документы&#xa;и регламент">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="610" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out1" edge="1" parent="1" source="box_a0" style="endArrow=classic;html=1;strokeWidth=1.5;exitX=1;exitY=0.3;align=center;verticalAlign=bottom;" value="Оплаченный проезд">
+          <mxGeometry relative="1" x="0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="960" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out2" edge="1" parent="1" source="box_a0" style="endArrow=classic;html=1;strokeWidth=1.5;exitX=1;exitY=0.7;align=center;verticalAlign=bottom;" value="Отчётность">
+          <mxGeometry relative="1" x="0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="960" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.22;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="Оператор">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="450" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.5;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="ИС платных дорог">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="540" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech3" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.8;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="Оборудование&#xa;пункта оплаты">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="636" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A0" id="pY52CaK28N95DZi2inXV">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1400" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" value="Регистрация клиентов и ТС&#xa;&#xa;[A1]" vertex="1">
+          <mxGeometry height="85" width="190" x="180" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" value="Управление тарифами&#xa;&#xa;[A2]" vertex="1">
+          <mxGeometry height="85" width="190" x="410" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" value="Фиксация проезда и&#xa;расчёт стоимости&#xa;[A3]" vertex="1">
+          <mxGeometry height="85" width="190" x="640" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" value="Приём и учёт платежей&#xa;&#xa;[A4]" vertex="1">
+          <mxGeometry height="85" width="190" x="870" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=1.5;" value="Формирование отчётности&#xa;&#xa;[A5]" vertex="1">
+          <mxGeometry height="85" width="190" x="1100" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="i_a1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;" target="a1" value="Заявка клиента">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="192" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_a3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.65;" target="a3" value="Транспортное средство">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="485" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_a1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;" target="a1" value="Нормативные документы и регламент">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="40" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_a2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;" target="a2" value="Тарифная политика">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="40" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f_a1_a3" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.35;" target="a3" value="Данные о клиенте и ТС">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_a2_a3" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" target="a3" value="Действующие тарифы">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_a3_a4" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" target="a4" value="Данные проезда и сумма">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f_a4_a5" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" target="a5" value="Реестр платежей и проездов">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o_a4" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.3;" value="Оплаченный проезд">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_a5" edge="1" parent="1" source="a5" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;" value="Отчётность">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360" y="752" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_a1" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;" target="a1" value="Оператор / ИС">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_a2" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;" target="a2" value="ИС платных дорог">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_a3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;" target="a3" value="Оборудование ПВП / ИС">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="735" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_a4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;" target="a4" value="ИС / Платёжный шлюз">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m_a5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;" target="a5" value="ИС платных дорог">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1195" y="880" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
