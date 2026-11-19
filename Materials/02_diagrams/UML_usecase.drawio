@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=#f8f9fa;strokeColor=#333333;strokeWidth=2;spacingTop=10;" value="ИС федеральной сети платных автомобильных дорог" vertex="1">
-          <mxGeometry height="770" width="1100" x="30" y="20" as="geometry" />
+          <mxGeometry height="750" width="680" x="250" y="40" as="geometry" />
         </mxCell>
         <mxCell id="act_driver" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Водитель" vertex="1">
           <mxGeometry height="80" width="40" x="100" y="130" as="geometry" />
