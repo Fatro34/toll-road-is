@@ -804,6 +804,7 @@ namespace POSINV
         }
     }
 
+
     public class TariffNotFoundException : Exception
     {
         public TariffNotFoundException(string msg) : base(msg) { }
