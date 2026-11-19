@@ -29,7 +29,7 @@ namespace POSINV
                 new ProductModel { ProductId = 2, Description = "М-11 Нева (Участок 2, Класс 2)", ListPrice = 5.20m, CostPrice = 5.20m, Quantity = 500, BrandName = "Грузовой", CategoryName = "Класс 2" }
             };
         }
-        }
+
 
         /// <summary>
         /// Load all Brands from DB

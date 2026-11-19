@@ -15,11 +15,6 @@ using System.Windows.Forms;
 
 namespace POSINV
 {
-    public class TariffNotFoundException : Exception
-    {
-        public TariffNotFoundException(string msg) : base(msg) { }
-    }
-
     public partial class PointOfSalePage : MaterialForm, INotifyPropertyChanged
     {
         public BrandModel SelectedBrand { get; set; }
@@ -808,6 +803,9 @@ namespace POSINV
 
         }
     }
+
+    public class TariffNotFoundException : Exception
+    {
+        public TariffNotFoundException(string msg) : base(msg) { }
+    }
 }
-
-
