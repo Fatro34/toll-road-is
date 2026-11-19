@@ -43,7 +43,7 @@ namespace POSINV
                 {
                     subtotal += item.Amount;
                 }
-                return subtotal.ToString("C", CultureInfo.CreateSpecificCulture("ur-PK"));
+                return subtotal.ToString("C", CultureInfo.CreateSpecificCulture("ru-RU"));
             }
         }
 
@@ -412,7 +412,7 @@ namespace POSINV
             );
             offset += 2 * (int)fontHeight;  //Consistent spacing
 
-            string saleDate = sale.SaleDate.ToString(CultureInfo.CreateSpecificCulture("ur-PK"));
+            string saleDate = sale.SaleDate.ToString(CultureInfo.CreateSpecificCulture("ru-RU"));
 
             graphics.DrawString(
                 saleDate, font, new SolidBrush(Color.Black), startX, startY + offset
@@ -511,9 +511,9 @@ namespace POSINV
             string subtotalRow = "Subtotal",
                 miscRow = sale.MiscPrice > 0 ? "Misc. Charges": "Discount",
                 totalRow = "Total",
-                subValue = subtotal.ToString("C", CultureInfo.CreateSpecificCulture("ur-PK")),
-                miscValue = sale.MiscPrice.ToString("C", CultureInfo.CreateSpecificCulture("ur-PK")),
-                totalValue = sale.SaleTotal.ToString("C", CultureInfo.CreateSpecificCulture("ur-PK"));
+                subValue = subtotal.ToString("C", CultureInfo.CreateSpecificCulture("ru-RU")),
+                miscValue = sale.MiscPrice.ToString("C", CultureInfo.CreateSpecificCulture("ru-RU")),
+                totalValue = sale.SaleTotal.ToString("C", CultureInfo.CreateSpecificCulture("ru-RU"));
 
             graphics.DrawString(subtotalRow, font, new SolidBrush(Color.Black), startX, startY + offset);
             graphics.DrawString(subValue, font, new SolidBrush(Color.Black), startX + 140, startY + offset);
@@ -792,3 +792,5 @@ namespace POSINV
         }
     }
 }
+
+

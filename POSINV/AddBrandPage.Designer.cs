@@ -99,7 +99,7 @@
             this.Controls.Add(this.textName);
             this.Controls.Add(this.labelName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.MaximizeBox = true;
             this.MaximumSize = new System.Drawing.Size(240, 240);
             this.MinimumSize = new System.Drawing.Size(192, 192);
             this.Name = "AddBrandPage";

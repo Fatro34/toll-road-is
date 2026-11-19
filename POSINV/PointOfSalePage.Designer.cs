@@ -121,7 +121,7 @@
             this.tabPageAddSale.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageAddSale.Size = new System.Drawing.Size(1568, 712);
             this.tabPageAddSale.TabIndex = 0;
-            this.tabPageAddSale.Text = "Add Sale";
+            this.tabPageAddSale.Text = "Регистрация проезда";
             // 
             // textMisc
             // 
@@ -171,7 +171,7 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(85, 24);
             this.materialLabel2.TabIndex = 32;
-            this.materialLabel2.Text = "Category";
+            this.materialLabel2.Text = "Класс ТС";
             this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelMisc
@@ -187,7 +187,7 @@
             this.labelMisc.Name = "labelMisc";
             this.labelMisc.Size = new System.Drawing.Size(139, 24);
             this.labelMisc.TabIndex = 42;
-            this.labelMisc.Text = "Misc Charges *";
+            this.labelMisc.Text = "Доп. сбор *";
             this.labelMisc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewCart
@@ -241,7 +241,7 @@
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(59, 24);
             this.materialLabel1.TabIndex = 30;
-            this.materialLabel1.Text = "Brand";
+            this.materialLabel1.Text = "Магистраль";
             this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRemoveFromCart
@@ -258,7 +258,7 @@
             this.btnRemoveFromCart.Primary = false;
             this.btnRemoveFromCart.Size = new System.Drawing.Size(189, 36);
             this.btnRemoveFromCart.TabIndex = 40;
-            this.btnRemoveFromCart.Text = "Remove From Cart";
+            this.btnRemoveFromCart.Text = "Убрать";
             this.btnRemoveFromCart.UseVisualStyleBackColor = true;
             this.btnRemoveFromCart.Click += new System.EventHandler(this.btnRemoveFromCart_Click);
             // 
@@ -276,7 +276,7 @@
             this.btnCheckOut.Primary = true;
             this.btnCheckOut.Size = new System.Drawing.Size(115, 36);
             this.btnCheckOut.TabIndex = 39;
-            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.Text = "Оплатить";
             this.btnCheckOut.UseVisualStyleBackColor = true;
             this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
@@ -309,7 +309,7 @@
             this.labelSubtotal.Name = "labelSubtotal";
             this.labelSubtotal.Size = new System.Drawing.Size(85, 24);
             this.labelSubtotal.TabIndex = 37;
-            this.labelSubtotal.Text = "Subtotal:";
+            this.labelSubtotal.Text = "К оплате:";
             this.labelSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAddToCart
@@ -326,7 +326,7 @@
             this.btnAddToCart.Primary = true;
             this.btnAddToCart.Size = new System.Drawing.Size(130, 36);
             this.btnAddToCart.TabIndex = 35;
-            this.btnAddToCart.Text = "Add To Cart";
+            this.btnAddToCart.Text = "В расчёт";
             this.btnAddToCart.UseVisualStyleBackColor = true;
             this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
@@ -363,7 +363,7 @@
             this.labelQuantity.Name = "labelQuantity";
             this.labelQuantity.Size = new System.Drawing.Size(92, 24);
             this.labelQuantity.TabIndex = 29;
-            this.labelQuantity.Text = "Quantity *";
+            this.labelQuantity.Text = "Лимит (км) *";
             this.labelQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureProductPreview
@@ -439,7 +439,7 @@
             this.btnSearchProduct.Primary = true;
             this.btnSearchProduct.Size = new System.Drawing.Size(74, 36);
             this.btnSearchProduct.TabIndex = 28;
-            this.btnSearchProduct.Text = "Clear";
+            this.btnSearchProduct.Text = "Сброс";
             this.btnSearchProduct.UseVisualStyleBackColor = true;
             this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
             // 
@@ -514,7 +514,7 @@
             this.tabPageManageSale.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageManageSale.Size = new System.Drawing.Size(1568, 712);
             this.tabPageManageSale.TabIndex = 2;
-            this.tabPageManageSale.Text = "Manage Sales";
+            this.tabPageManageSale.Text = "Журнал проездов";
             // 
             // btnViewSale
             // 
@@ -530,7 +530,7 @@
             this.btnViewSale.Primary = false;
             this.btnViewSale.Size = new System.Drawing.Size(63, 36);
             this.btnViewSale.TabIndex = 15;
-            this.btnViewSale.Text = "View";
+            this.btnViewSale.Text = "Детали";
             this.btnViewSale.UseVisualStyleBackColor = true;
             this.btnViewSale.Click += new System.EventHandler(this.btnViewSale_Click);
             // 
@@ -548,7 +548,7 @@
             this.btnDeleteSale.Primary = false;
             this.btnDeleteSale.Size = new System.Drawing.Size(82, 36);
             this.btnDeleteSale.TabIndex = 11;
-            this.btnDeleteSale.Text = "Delete";
+            this.btnDeleteSale.Text = "Удалить";
             this.btnDeleteSale.UseVisualStyleBackColor = true;
             this.btnDeleteSale.Click += new System.EventHandler(this.btnDeleteSale_Click);
             // 
@@ -587,7 +587,7 @@
             this.btnSearchSale.Primary = true;
             this.btnSearchSale.Size = new System.Drawing.Size(74, 36);
             this.btnSearchSale.TabIndex = 9;
-            this.btnSearchSale.Text = "Clear";
+            this.btnSearchSale.Text = "Сброс";
             this.btnSearchSale.UseVisualStyleBackColor = true;
             this.btnSearchSale.Click += new System.EventHandler(this.btnSearchSale_Click);
             // 
@@ -678,7 +678,7 @@
             this.Name = "PointOfSalePage";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Process Sales";
+            this.Text = "Пункт взимания платы (ПВП)";
             this.mtcSale.ResumeLayout(false);
             this.tabPageAddSale.ResumeLayout(false);
             this.tabPageAddSale.PerformLayout();
@@ -730,3 +730,5 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
+
+

@@ -52,7 +52,7 @@
             this.btnPointOfSale.Primary = false;
             this.btnPointOfSale.Size = new System.Drawing.Size(118, 36);
             this.btnPointOfSale.TabIndex = 0;
-            this.btnPointOfSale.Text = "Point Of Sale";
+            this.btnPointOfSale.Text = "Проезды (ПВП)";
             this.btnPointOfSale.UseVisualStyleBackColor = false;
             this.btnPointOfSale.Click += new System.EventHandler(this.btnPointOfSale_Click);
             // 
@@ -74,7 +74,7 @@
             this.btnInventory.Primary = false;
             this.btnInventory.Size = new System.Drawing.Size(96, 36);
             this.btnInventory.TabIndex = 1;
-            this.btnInventory.Text = "Inventory";
+            this.btnInventory.Text = "Тарифы";
             this.btnInventory.UseVisualStyleBackColor = false;
             this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
@@ -95,7 +95,7 @@
             this.btnReports.Primary = false;
             this.btnReports.Size = new System.Drawing.Size(125, 36);
             this.btnReports.TabIndex = 2;
-            this.btnReports.Text = "Sales Reports";
+            this.btnReports.Text = "Отчёты";
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.materialFlatButton1_Click);
             // 
@@ -109,14 +109,14 @@
             this.Controls.Add(this.btnInventory);
             this.Controls.Add(this.btnPointOfSale);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.MaximizeBox = true;
             this.MaximumSize = new System.Drawing.Size(480, 270);
             this.MinimumSize = new System.Drawing.Size(480, 270);
             this.Name = "Homepage";
-            this.Sizable = false;
+            this.Sizable = true;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "ИС Платные дороги — Главная";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,4 +129,7 @@
         private MaterialSkin.Controls.MaterialFlatButton btnReports;
     }
 }
+
+
+
 

@@ -1,0 +1,69 @@
+﻿╤ЄЁєъЄєЁр яряюъ
+╤хЁшщэ√щ эюьхЁ Єюьр: 0000021D 4A2A:FE5F
+C:.
+|   .gitattributes
+|   .gitignore
+|   LICENSE
+|   POSINV.sln
+|   README.md
+|   
++---POSINV
+|   |   AddBrandPage.cs
+|   |   AddBrandPage.Designer.cs
+|   |   AddBrandPage.resx
+|   |   AddCategoryPage.cs
+|   |   AddCategoryPage.Designer.cs
+|   |   AddCategoryPage.resx
+|   |   App.config
+|   |   book.ico
+|   |   Homepage.cs
+|   |   Homepage.Designer.cs
+|   |   Homepage.resx
+|   |   InventoryDB.db
+|   |   InventoryPage.cs
+|   |   InventoryPage.Designer.cs
+|   |   InventoryPage.resx
+|   |   packages.config
+|   |   PointOfSalePage.cs
+|   |   PointOfSalePage.Designer.cs
+|   |   PointOfSalePage.resx
+|   |   POSINV.csproj
+|   |   Program.cs
+|   |   ReportsPage.cs
+|   |   ReportsPage.Designer.cs
+|   |   ReportsPage.resx
+|   |   SQLiteDataAccess.cs
+|   |   UpdateBrandPage.cs
+|   |   UpdateBrandPage.Designer.cs
+|   |   UpdateBrandPage.resx
+|   |   UpdateCategoryPage.cs
+|   |   UpdateCategoryPage.Designer.cs
+|   |   UpdateCategoryPage.resx
+|   |   UpdateProductPage.cs
+|   |   UpdateProductPage.Designer.cs
+|   |   UpdateProductPage.resx
+|   |   ViewSalePage.cs
+|   |   ViewSalePage.Designer.cs
+|   |   ViewSalePage.resx
+|   |   
+|   +---Models
+|   |       BrandModel.cs
+|   |       CartItemModel.cs
+|   |       CategoryModel.cs
+|   |       ProductModel.cs
+|   |       SaleModel.cs
+|   |       
+|   \---Properties
+|           AssemblyInfo.cs
+|           Resources.Designer.cs
+|           Resources.resx
+|           Settings.Designer.cs
+|           Settings.settings
+|           
+\---screenshots
+        Screenshot1.png
+        Screenshot2.png
+        Screenshot3.png
+        Screenshot4.png
+        Screenshot5.png
+        

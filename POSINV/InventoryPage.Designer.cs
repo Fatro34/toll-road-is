@@ -152,7 +152,7 @@
             this.tabPageAddProduct.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageAddProduct.Size = new System.Drawing.Size(1248, 546);
             this.tabPageAddProduct.TabIndex = 0;
-            this.tabPageAddProduct.Text = "Add Product";
+            this.tabPageAddProduct.Text = "Добавить тариф";
             // 
             // materialDivider3
             // 
@@ -200,14 +200,14 @@
             this.btnSaveProduct.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSaveProduct.Depth = 0;
             this.btnSaveProduct.Icon = null;
-            this.btnSaveProduct.Location = new System.Drawing.Point(1025, 470);
+            this.btnSaveProduct.Location = new System.Drawing.Point(665, 470);
             this.btnSaveProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnSaveProduct.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSaveProduct.Name = "btnSaveProduct";
             this.btnSaveProduct.Primary = true;
             this.btnSaveProduct.Size = new System.Drawing.Size(146, 36);
             this.btnSaveProduct.TabIndex = 22;
-            this.btnSaveProduct.Text = "Save Product";
+            this.btnSaveProduct.Text = "Сохранить";
             this.btnSaveProduct.UseVisualStyleBackColor = true;
             this.btnSaveProduct.Click += new System.EventHandler(this.btnSaveProduct_Click);
             // 
@@ -242,7 +242,7 @@
             this.btnAddPicture.Primary = true;
             this.btnAddPicture.Size = new System.Drawing.Size(129, 36);
             this.btnAddPicture.TabIndex = 20;
-            this.btnAddPicture.Text = "Add Picture";
+            this.btnAddPicture.Text = "Схема участка";
             this.btnAddPicture.UseVisualStyleBackColor = true;
             this.btnAddPicture.Click += new System.EventHandler(this.btnAddPicture_Click);
             // 
@@ -262,7 +262,7 @@
             this.btnAddBrand.Size = new System.Drawing.Size(158, 36);
             this.btnAddBrand.TabIndex = 19;
             this.btnAddBrand.TabStop = false;
-            this.btnAddBrand.Text = "Add New Brand";
+            this.btnAddBrand.Text = "Новая магистраль";
             this.btnAddBrand.UseVisualStyleBackColor = true;
             this.btnAddBrand.Click += new System.EventHandler(this.btnAddBrand_Click);
             // 
@@ -282,7 +282,7 @@
             this.btnAddCategory.Size = new System.Drawing.Size(189, 36);
             this.btnAddCategory.TabIndex = 18;
             this.btnAddCategory.TabStop = false;
-            this.btnAddCategory.Text = "Add New Category";
+            this.btnAddCategory.Text = "Новый класс ТС";
             this.btnAddCategory.UseVisualStyleBackColor = true;
             this.btnAddCategory.Click += new System.EventHandler(this.btnAddCategory_Click);
             // 
@@ -300,7 +300,7 @@
             this.labelCategory.Name = "labelCategory";
             this.labelCategory.Size = new System.Drawing.Size(98, 24);
             this.labelCategory.TabIndex = 14;
-            this.labelCategory.Text = "Category *";
+            this.labelCategory.Text = "Класс ТС *";
             this.labelCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelBrand
@@ -317,7 +317,7 @@
             this.labelBrand.Name = "labelBrand";
             this.labelBrand.Size = new System.Drawing.Size(72, 24);
             this.labelBrand.TabIndex = 13;
-            this.labelBrand.Text = "Brand *";
+            this.labelBrand.Text = "Магистраль *";
             this.labelBrand.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboCategory
@@ -351,7 +351,7 @@
             this.textDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.textDescription.Depth = 0;
-            this.textDescription.Hint = "(Variant, Specs)";
+            this.textDescription.Hint = "(Например: М-11, км 15-58)";
             this.textDescription.Location = new System.Drawing.Point(116, 123);
             this.textDescription.Margin = new System.Windows.Forms.Padding(4);
             this.textDescription.MaxLength = 1000;
@@ -380,7 +380,7 @@
             this.labelDescription.Name = "labelDescription";
             this.labelDescription.Size = new System.Drawing.Size(106, 24);
             this.labelDescription.TabIndex = 9;
-            this.labelDescription.Text = "Description";
+            this.labelDescription.Text = "Участок / Описание";
             this.labelDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textQuantity
@@ -417,7 +417,7 @@
             this.labelQuantity.Name = "labelQuantity";
             this.labelQuantity.Size = new System.Drawing.Size(92, 24);
             this.labelQuantity.TabIndex = 7;
-            this.labelQuantity.Text = "Quantity *";
+            this.labelQuantity.Text = "Лимит (км) *";
             this.labelQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textList
@@ -454,7 +454,7 @@
             this.labelList.Name = "labelList";
             this.labelList.Size = new System.Drawing.Size(102, 24);
             this.labelList.TabIndex = 5;
-            this.labelList.Text = "List Price *";
+            this.labelList.Text = "Тариф/км *";
             this.labelList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textCost
@@ -491,7 +491,7 @@
             this.labelCost.Name = "labelCost";
             this.labelCost.Size = new System.Drawing.Size(110, 24);
             this.labelCost.TabIndex = 3;
-            this.labelCost.Text = "Cost Price *";
+            this.labelCost.Text = "База/км *";
             this.labelCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabSAddProduct
@@ -532,7 +532,7 @@
             this.tabPageManageProduct.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageManageProduct.Size = new System.Drawing.Size(1248, 546);
             this.tabPageManageProduct.TabIndex = 1;
-            this.tabPageManageProduct.Text = "Manage Products";
+            this.tabPageManageProduct.Text = "Справочник тарифов";
             // 
             // materialLabel2
             // 
@@ -548,7 +548,7 @@
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(158, 24);
             this.materialLabel2.TabIndex = 27;
-            this.materialLabel2.Text = "Filter by Category";
+            this.materialLabel2.Text = "Фильтр по классу ТС";
             this.materialLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // categoryFilterComboBox
@@ -579,7 +579,7 @@
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(132, 24);
             this.materialLabel1.TabIndex = 25;
-            this.materialLabel1.Text = "Filter by Brand";
+            this.materialLabel1.Text = "Фильтр по магистрали";
             this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // brandFilterComboBox
@@ -632,7 +632,7 @@
             this.btnUpdateProduct.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUpdateProduct.Depth = 0;
             this.btnUpdateProduct.Icon = null;
-            this.btnUpdateProduct.Location = new System.Drawing.Point(466, 85);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(480, 85);
             this.btnUpdateProduct.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnUpdateProduct.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdateProduct.Name = "btnUpdateProduct";
@@ -640,7 +640,7 @@
             this.btnUpdateProduct.Size = new System.Drawing.Size(87, 36);
             this.btnUpdateProduct.TabIndex = 15;
             this.btnUpdateProduct.TabStop = false;
-            this.btnUpdateProduct.Text = "Update";
+            this.btnUpdateProduct.Text = "Изменить";
             this.btnUpdateProduct.UseVisualStyleBackColor = true;
             this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
             // 
@@ -660,7 +660,7 @@
             this.btnDeleteProduct.Size = new System.Drawing.Size(82, 36);
             this.btnDeleteProduct.TabIndex = 8;
             this.btnDeleteProduct.TabStop = false;
-            this.btnDeleteProduct.Text = "Delete";
+            this.btnDeleteProduct.Text = "Удалить";
             this.btnDeleteProduct.UseVisualStyleBackColor = true;
             this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
@@ -692,14 +692,14 @@
             this.btnSearchProduct.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSearchProduct.Depth = 0;
             this.btnSearchProduct.Icon = null;
-            this.btnSearchProduct.Location = new System.Drawing.Point(986, 85);
+            this.btnSearchProduct.Location = new System.Drawing.Point(760, 85);
             this.btnSearchProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchProduct.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSearchProduct.Name = "btnSearchProduct";
             this.btnSearchProduct.Primary = true;
             this.btnSearchProduct.Size = new System.Drawing.Size(74, 36);
             this.btnSearchProduct.TabIndex = 8;
-            this.btnSearchProduct.Text = "Clear";
+            this.btnSearchProduct.Text = "Сброс";
             this.btnSearchProduct.UseVisualStyleBackColor = true;
             this.btnSearchProduct.Click += new System.EventHandler(this.btnSearchProduct_Click);
             // 
@@ -799,7 +799,7 @@
             this.tabPageManageBrand.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageManageBrand.Size = new System.Drawing.Size(1248, 546);
             this.tabPageManageBrand.TabIndex = 2;
-            this.tabPageManageBrand.Text = "Manage Brands";
+            this.tabPageManageBrand.Text = "Магистрали";
             // 
             // btnUpdateBrand
             // 
@@ -808,14 +808,14 @@
             this.btnUpdateBrand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUpdateBrand.Depth = 0;
             this.btnUpdateBrand.Icon = null;
-            this.btnUpdateBrand.Location = new System.Drawing.Point(466, 85);
+            this.btnUpdateBrand.Location = new System.Drawing.Point(480, 85);
             this.btnUpdateBrand.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnUpdateBrand.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdateBrand.Name = "btnUpdateBrand";
             this.btnUpdateBrand.Primary = false;
             this.btnUpdateBrand.Size = new System.Drawing.Size(87, 36);
             this.btnUpdateBrand.TabIndex = 15;
-            this.btnUpdateBrand.Text = "Update";
+            this.btnUpdateBrand.Text = "Изменить";
             this.btnUpdateBrand.UseVisualStyleBackColor = true;
             this.btnUpdateBrand.Click += new System.EventHandler(this.btnUpdateBrand_Click);
             // 
@@ -833,7 +833,7 @@
             this.btnDeleteBrand.Primary = false;
             this.btnDeleteBrand.Size = new System.Drawing.Size(82, 36);
             this.btnDeleteBrand.TabIndex = 11;
-            this.btnDeleteBrand.Text = "Delete";
+            this.btnDeleteBrand.Text = "Удалить";
             this.btnDeleteBrand.UseVisualStyleBackColor = true;
             this.btnDeleteBrand.Click += new System.EventHandler(this.btnDeleteBrand_Click);
             // 
@@ -865,14 +865,14 @@
             this.btnSearchBrand.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSearchBrand.Depth = 0;
             this.btnSearchBrand.Icon = null;
-            this.btnSearchBrand.Location = new System.Drawing.Point(986, 85);
+            this.btnSearchBrand.Location = new System.Drawing.Point(760, 85);
             this.btnSearchBrand.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchBrand.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSearchBrand.Name = "btnSearchBrand";
             this.btnSearchBrand.Primary = true;
             this.btnSearchBrand.Size = new System.Drawing.Size(74, 36);
             this.btnSearchBrand.TabIndex = 9;
-            this.btnSearchBrand.Text = "Clear";
+            this.btnSearchBrand.Text = "Сброс";
             this.btnSearchBrand.UseVisualStyleBackColor = true;
             this.btnSearchBrand.Click += new System.EventHandler(this.btnSearchBrand_Click);
             // 
@@ -969,7 +969,7 @@
             this.tabPageManageCategory.Padding = new System.Windows.Forms.Padding(4);
             this.tabPageManageCategory.Size = new System.Drawing.Size(1248, 546);
             this.tabPageManageCategory.TabIndex = 3;
-            this.tabPageManageCategory.Text = "Manage Categories";
+            this.tabPageManageCategory.Text = "Классы ТС";
             // 
             // btnUpdateCategory
             // 
@@ -978,14 +978,14 @@
             this.btnUpdateCategory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnUpdateCategory.Depth = 0;
             this.btnUpdateCategory.Icon = null;
-            this.btnUpdateCategory.Location = new System.Drawing.Point(466, 85);
+            this.btnUpdateCategory.Location = new System.Drawing.Point(480, 85);
             this.btnUpdateCategory.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.btnUpdateCategory.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnUpdateCategory.Name = "btnUpdateCategory";
             this.btnUpdateCategory.Primary = false;
             this.btnUpdateCategory.Size = new System.Drawing.Size(87, 36);
             this.btnUpdateCategory.TabIndex = 14;
-            this.btnUpdateCategory.Text = "Update";
+            this.btnUpdateCategory.Text = "Изменить";
             this.btnUpdateCategory.UseVisualStyleBackColor = true;
             this.btnUpdateCategory.Click += new System.EventHandler(this.btnUpdateCategory_Click);
             // 
@@ -1003,7 +1003,7 @@
             this.btnDeleteCategory.Primary = false;
             this.btnDeleteCategory.Size = new System.Drawing.Size(82, 36);
             this.btnDeleteCategory.TabIndex = 13;
-            this.btnDeleteCategory.Text = "Delete";
+            this.btnDeleteCategory.Text = "Удалить";
             this.btnDeleteCategory.UseVisualStyleBackColor = true;
             this.btnDeleteCategory.Click += new System.EventHandler(this.btnDeleteCategory_Click);
             // 
@@ -1035,14 +1035,14 @@
             this.btnSearchCategory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSearchCategory.Depth = 0;
             this.btnSearchCategory.Icon = null;
-            this.btnSearchCategory.Location = new System.Drawing.Point(986, 85);
+            this.btnSearchCategory.Location = new System.Drawing.Point(760, 85);
             this.btnSearchCategory.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchCategory.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSearchCategory.Name = "btnSearchCategory";
             this.btnSearchCategory.Primary = true;
             this.btnSearchCategory.Size = new System.Drawing.Size(74, 36);
             this.btnSearchCategory.TabIndex = 9;
-            this.btnSearchCategory.Text = "Clear";
+            this.btnSearchCategory.Text = "Сброс";
             this.btnSearchCategory.UseVisualStyleBackColor = true;
             this.btnSearchCategory.Click += new System.EventHandler(this.btnSearchCategory_Click);
             // 
@@ -1143,7 +1143,7 @@
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manage Inventory";
+            this.Text = "Управление тарифами и дорогами";
             this.mtcInventory.ResumeLayout(false);
             this.tabPageAddProduct.ResumeLayout(false);
             this.tabPageAddProduct.PerformLayout();
@@ -1226,3 +1226,8 @@
         private System.Windows.Forms.ComboBox categoryFilterComboBox;
     }
 }
+
+
+
+
+

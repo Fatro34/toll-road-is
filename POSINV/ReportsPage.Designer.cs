@@ -48,7 +48,7 @@
             this.labelPeriod.Name = "labelPeriod";
             this.labelPeriod.Size = new System.Drawing.Size(102, 19);
             this.labelPeriod.TabIndex = 5;
-            this.labelPeriod.Text = "Select Period:";
+            this.labelPeriod.Text = "Выберите период:";
             // 
             // dateTimePickerFrom
             // 
@@ -75,7 +75,7 @@
             this.labelFrom.Name = "labelFrom";
             this.labelFrom.Size = new System.Drawing.Size(49, 19);
             this.labelFrom.TabIndex = 11;
-            this.labelFrom.Text = "FROM";
+            this.labelFrom.Text = "С";
             // 
             // labelTo
             // 
@@ -88,7 +88,7 @@
             this.labelTo.Name = "labelTo";
             this.labelTo.Size = new System.Drawing.Size(28, 19);
             this.labelTo.TabIndex = 12;
-            this.labelTo.Text = "TO";
+            this.labelTo.Text = "ПО";
             // 
             // btnGenerate
             // 
@@ -102,7 +102,7 @@
             this.btnGenerate.Primary = true;
             this.btnGenerate.Size = new System.Drawing.Size(144, 36);
             this.btnGenerate.TabIndex = 13;
-            this.btnGenerate.Text = "Generate Report";
+            this.btnGenerate.Text = "Сформировать отчёт";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
@@ -123,7 +123,7 @@
             this.Name = "ReportsPage";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reports";
+            this.Text = "Отчётность по трафику";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,3 +139,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnGenerate;
     }
 }
+
+
+
+
