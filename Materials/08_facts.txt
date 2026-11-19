@@ -1,11 +1,15 @@
-﻿ОС и версия:
-Visual Studio и версия:
-Версия .NET / Framework:
-Репозиторий, лицензия, коммит (хэш), дата коммита: https://github.com/mbilalakmal/InventorySystem.git, MIT License, 2f587bb747465cc0ad12a9fdeb13e74d6431341e, 21.09.2021
-Путь установки / путь к exe:
-Файл БД, путь, размер:
-Команды сборки и запуска:
-Параметры подключения к БД (без паролей):
-Команды из этапа 9 и их результат:
-Известные ограничения:
-
+﻿ТЕХНИЧЕСКИЙ ПАСПОРТ (УП ПМ.02, вариант 22)
+ОС: Майкрософт Windows 11 Домашняя, версия 10.0.26100, архитектура ОС: 
+Среда разработки: Visual Studio 2022, версия 17.14.45
+Платформа: .NET Framework 4.8 (TargetFrameworkVersion v4.8), PlatformTarget в csproj: <PlatformTarget>x86</PlatformTarget>; <PlatformTarget>x86</PlatformTarget>
+Репозиторий: https://github.com/Fatro34/toll-road-is
+Основа: проект POSINV (InventorySystem), C# WinForms, SQLite; файл LICENSE найден в репозитории
+Тег версии: v1.0-practice, коммит 9fc4bff
+Исполняемый файл: C:\Practice\InventorySystem\POSINV\bin\Debug\POSINV.exe
+SHA256: 00BB5036CFDB73733CD9ABCA02A9063FC18C4FCB93A5DD7722E7D97DF9B9D5CB
+Файл БД: C:\Practice\Data\InventoryDB.db, 65536 байт
+Резервная копия: C:\Practice\Backup\InventoryDB_20261119_2352.bak
+Права на папку БД: Администраторы, СИСТЕМА, текущий пользователь (icacls)
+Сборка: msbuild POSINV.sln /t:Rebuild /p:Configuration=Debug
+Запуск: POSINV\bin\Debug\POSINV.exe
+Ограничения: в приложении нет авторизации и ролей; тарифы заданы в методе LoadProducts; обмен данными между ПК не проверялся (SQLite, файл БД)
