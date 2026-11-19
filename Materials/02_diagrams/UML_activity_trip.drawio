@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="oUbhs_hRwhw82C-a3kBz">
+    <mxGraphModel dx="1678" dy="1218" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=30;horizontalStack=1;html=1;fontStyle=1;fontSize=14;" value="Проезд через пункт оплаты" vertex="1">
+          <mxGeometry height="960" width="880" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1" parent="pool" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#f5f5f5;" value="Водитель" vertex="1">
+          <mxGeometry height="930" width="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="st_drive" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Подъехать к пункту&#xa;оплаты (ПВП)" vertex="1">
+          <mxGeometry height="50" width="150" x="45" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="st_pass" parent="lane1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Проехать через&#xa;открытый шлагбаум" vertex="1">
+          <mxGeometry height="50" width="150" x="45" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="lane1" style="ellipse;html=1;shape=doubleEllipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" parent="pool" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#ffffff;" value="Оператор / Система" vertex="1">
+          <mxGeometry height="930" width="420" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="st_ident" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Идентифицировать ТС по&#xa;транспондеру или гос. номеру" vertex="1">
+          <mxGeometry height="50" width="190" x="115" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_found" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ТС найдено&#xa;в БД?" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="st_single" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Оформить разовый&#xa;проезд" vertex="1">
+          <mxGeometry height="50" width="130" x="275" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="st_class" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Определить класс ТС" vertex="1">
+          <mxGeometry height="45" width="170" x="125" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="st_calc" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Рассчитать стоимость&#xa;(|км_выезда - км_въезда| × тариф)" vertex="1">
+          <mxGeometry height="55" width="210" x="105" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_bal" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Баланс&#xa;достаточен?" vertex="1">
+          <mxGeometry height="75" width="120" x="150" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="st_paid" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Записать проезд со&#xa;статусом «оплачен»" vertex="1">
+          <mxGeometry height="50" width="160" x="230" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="st_debt" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Записать проезд «задолженность»&#xa;и уведомить клиента" vertex="1">
+          <mxGeometry height="50" width="180" x="20" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="st_gate" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Открыть шлагбаум" vertex="1">
+          <mxGeometry height="45" width="170" x="125" y="715" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" parent="pool" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#f5f5f5;" value="Платёжная система" vertex="1">
+          <mxGeometry height="930" width="220" x="660" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="st_charge" parent="lane3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Списать сумму проезда&#xa;со счёта клиента" vertex="1">
+          <mxGeometry height="50" width="160" x="30" y="527" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="pool" source="start" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_drive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="pool" source="st_drive" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_ident">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="pool" source="st_ident" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="dec_found">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="pool" source="dec_found" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_single" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="pool" source="dec_found" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_class" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="pool" source="st_single" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="pool" source="st_class" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_calc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="pool" source="st_calc" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="dec_bal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="pool" source="dec_bal" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_charge" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" edge="1" parent="pool" source="st_charge" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_paid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f11" edge="1" parent="pool" source="dec_bal" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_debt" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f12" edge="1" parent="pool" source="st_paid" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f13" edge="1" parent="pool" source="st_debt" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f14" edge="1" parent="pool" source="st_gate" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="st_pass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f15" edge="1" parent="pool" source="st_pass" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
