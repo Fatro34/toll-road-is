@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Globalization;
@@ -14,6 +15,11 @@ using System.Windows.Forms;
 
 namespace POSINV
 {
+    public class TariffNotFoundException : Exception
+    {
+        public TariffNotFoundException(string msg) : base(msg) { }
+    }
+
     public partial class PointOfSalePage : MaterialForm, INotifyPropertyChanged
     {
         public BrandModel SelectedBrand { get; set; }
@@ -236,43 +242,54 @@ namespace POSINV
 
         private void AddToCart()
         {
-            //If item is already in cart, update quantity otherwise add it to cart
-            ProductModel product = (ProductModel)dataGridViewProduct.CurrentRow.DataBoundItem;
-
-            //check if item already in cart
-            CartItemModel cartItem = Cart.FirstOrDefault<CartItemModel>(
-                x => x.ProductId == product.ProductId
-                );
-
-            if( cartItem != default(CartItemModel))
+            try
             {
-                //reset product quantity | add previous item quantity back
-                product.Quantity += cartItem.Quantity;
+                ProductModel product = (ProductModel)dataGridViewProduct.CurrentRow?.DataBoundItem;
 
-                //Update quantity of existing cartItem
-                cartItem.Quantity += int.TryParse(textQuantity.Text, out int number) ? number : 1;
-            }
-            else
-            {
-                //create a new cartItem & Add it to cart
-                cartItem = new CartItemModel
+                if (product == null || product.ListPrice <= 0)
                 {
-                    ProductId = product.ProductId,
-                    Description = product.Description,
-                    UnitCost = product.CostPrice,
-                    UnitPrice = product.ListPrice,
-                    Quantity = int.TryParse(textQuantity.Text, out int number) ? number : 1
-                };
-                Cart.Add(cartItem);
+                    throw new TariffNotFoundException("Тариф для выбранного участка не найден!");
+                }
+
+                int km = int.TryParse(textQuantity.Text, out int number) ? number : 1;
+                decimal price = product.ListPrice;
+
+#if DEBUG
+                Debug.WriteLine("Расчёт: км=" + km + ", тариф=" + price + ", итог=" + (km * price));
+#endif
+
+                CartItemModel cartItem = Cart.FirstOrDefault(x => x.ProductId == product.ProductId);
+
+                if (cartItem != default(CartItemModel))
+                {
+                    product.Quantity += cartItem.Quantity;
+                    cartItem.Quantity += km;
+                }
+                else
+                {
+                    cartItem = new CartItemModel
+                    {
+                        ProductId = product.ProductId,
+                        Description = product.Description,
+                        UnitCost = product.CostPrice,
+                        UnitPrice = price,
+                        Quantity = km
+                    };
+                    Cart.Add(cartItem);
+                }
+
+                NotifyPropertyChanged("Subtotal");
+                product.Quantity -= cartItem.Quantity;
+                ResetTextQuantity();
             }
-
-            //update Subtotal
-            NotifyPropertyChanged("Subtotal");
-
-            //decrement from product
-            product.Quantity -= cartItem.Quantity;
-
-            ResetTextQuantity();
+            catch (TariffNotFoundException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка тарифа", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка расчёта: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ResetTextQuantity()

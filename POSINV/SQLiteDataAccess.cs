@@ -21,15 +21,14 @@ namespace POSINV
         /// </summary>
         /// <param name="OrderBy"></param>
         /// <returns></returns>
-        public static List<ProductModel> LoadProducts(String OrderBy = "PRODUCTNAME")
+        public static List<ProductModel> LoadProducts(string OrderBy = "PRODUCTNAME")
         {
-            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            return new List<ProductModel>
             {
-                string sql = @"SELECT * FROM PRODUCT NATURAL JOIN BRAND NATURAL JOIN CATEGORY";
-
-                var output = cnn.Query<ProductModel>(sql, new DynamicParameters());
-                return output.ToList();
-            }
+                new ProductModel { ProductId = 1, Description = "М-4 Дон (Участок 1, Класс 1)", ListPrice = 3.50m, CostPrice = 3.50m, Quantity = 500, BrandName = "Легковой", CategoryName = "Класс 1" },
+                new ProductModel { ProductId = 2, Description = "М-11 Нева (Участок 2, Класс 2)", ListPrice = 5.20m, CostPrice = 5.20m, Quantity = 500, BrandName = "Грузовой", CategoryName = "Класс 2" }
+            };
+        }
         }
 
         /// <summary>
