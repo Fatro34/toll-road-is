@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="oUbhs_hRwhw82C-a3kBz">
+    <mxGraphModel dx="1231" dy="893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=14;fillColor=#f8f9fa;strokeColor=#333333;strokeWidth=2;spacingTop=10;" value="ИС федеральной сети платных автомобильных дорог" vertex="1">
+          <mxGeometry height="770" width="1100" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act_driver" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Водитель" vertex="1">
+          <mxGeometry height="80" width="40" x="100" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act_operator" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Оператор&#xa;пункта оплаты" vertex="1">
+          <mxGeometry height="80" width="40" x="100" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_accountant" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Бухгалтер" vertex="1">
+          <mxGeometry height="80" width="40" x="100" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="act_admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;" value="Администратор" vertex="1">
+          <mxGeometry height="80" width="40" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pay" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Платёжная&#xa;система" vertex="1">
+          <mxGeometry height="80" width="40" x="1030" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_topup" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Пополнить счёт" vertex="1">
+          <mxGeometry height="55" width="170" x="330" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_pay" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Оплатить проезд" vertex="1">
+          <mxGeometry height="55" width="170" x="330" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_debt" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Обработать задолженность&#xa;[недостаточно средств]" vertex="1">
+          <mxGeometry height="60" width="210" x="660" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_history" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Просмотреть историю проездов" vertex="1">
+          <mxGeometry height="55" width="190" x="330" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_reg" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Зарегистрировать клиента и ТС" vertex="1">
+          <mxGeometry height="55" width="190" x="330" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_trip" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Зафиксировать проезд" vertex="1">
+          <mxGeometry height="55" width="190" x="330" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_calc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Рассчитать стоимость проезда" vertex="1">
+          <mxGeometry height="55" width="200" x="670" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_report" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Сформировать отчёт о доходах" vertex="1">
+          <mxGeometry height="55" width="190" x="330" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_tariffs" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Управлять тарифами" vertex="1">
+          <mxGeometry height="55" width="190" x="330" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_users" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="Управлять пользователями&#xa;и ролями" vertex="1">
+          <mxGeometry height="60" width="190" x="330" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Войти в систему" vertex="1">
+          <mxGeometry height="60" width="170" x="700" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="act_driver" style="endArrow=none;html=1;" target="uc_topup">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="act_driver" style="endArrow=none;html=1;" target="uc_pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="act_driver" style="endArrow=none;html=1;" target="uc_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="act_operator" style="endArrow=none;html=1;" target="uc_reg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="act_operator" style="endArrow=none;html=1;" target="uc_trip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="act_accountant" style="endArrow=none;html=1;" target="uc_report">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;" target="uc_tariffs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="act_admin" style="endArrow=none;html=1;" target="uc_users">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="uc_topup" style="endArrow=none;html=1;" target="act_pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="uc_debt" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_pay" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="uc_trip" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_calc" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l1" edge="1" parent="1" source="uc_history" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l2" edge="1" parent="1" source="uc_reg" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l3" edge="1" parent="1" source="uc_trip" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l4" edge="1" parent="1" source="uc_report" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l5" edge="1" parent="1" source="uc_tariffs" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_l6" edge="1" parent="1" source="uc_users" style="endArrow=open;dashed=1;html=1;endFill=0;" target="uc_login" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
