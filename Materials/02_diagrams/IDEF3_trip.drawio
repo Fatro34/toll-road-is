@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="nmbdH7tl8T7gC3sCQN3d" name="Страница-1">
+    <mxGraphModel dx="2564" dy="1861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Въезд ТС&#xa;[1]" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Идентификация ТС&#xa;[2]" vertex="1">
+          <mxGeometry height="60" width="135" x="195" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="xor1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" value="X" vertex="1">
+          <mxGeometry height="40" width="40" x="365" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Оформление разового&#xa;проезда [3]" vertex="1">
+          <mxGeometry height="60" width="150" x="435" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Определение класса&#xa;и тарифа [4]" vertex="1">
+          <mxGeometry height="60" width="145" x="520" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Расчёт стоимости&#xa;[5]" vertex="1">
+          <mxGeometry height="60" width="130" x="700" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="xor2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;" value="X" vertex="1">
+          <mxGeometry height="40" width="40" x="865" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Списание средств&#xa;[6]" vertex="1">
+          <mxGeometry height="60" width="140" x="945" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="u7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Фиксация задолженности&#xa;[7]" vertex="1">
+          <mxGeometry height="60" width="155" x="945" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="u8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Открытие шлагбаума&#xa;[8]" vertex="1">
+          <mxGeometry height="60" width="135" x="1135" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="u9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Запись проезда в БД&#xa;[9]" vertex="1">
+          <mxGeometry height="60" width="140" x="1300" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" source="u1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" source="u2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="xor1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" source="xor1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u3" value="ТС не найдено">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" source="xor1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u4" value="ТС найдено">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" edge="1" parent="1" source="u3" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" edge="1" parent="1" source="u4" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l7" edge="1" parent="1" source="u5" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="xor2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8" edge="1" parent="1" source="xor2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u6" value="Баланс достаточен">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l9" edge="1" parent="1" source="xor2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u7" value="Недостаточно">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l10" edge="1" parent="1" source="u6" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l11" edge="1" parent="1" source="u7" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l12" edge="1" parent="1" source="u8" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="u9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
