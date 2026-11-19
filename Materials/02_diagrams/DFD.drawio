@@ -1,0 +1,212 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram name="Страница-1" id="oUbhs_hRwhw82C-a3kBz">
+    <mxGraphModel dx="1538" dy="1117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="box_a0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="Обеспечивать функционирование&#xa;сети платных автодорог" vertex="1">
+          <mxGeometry height="150" width="320" x="380" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="num_a0" parent="1" style="text;html=1;align=right;verticalAlign=bottom;fontStyle=1;fontSize=12;" value="A0" vertex="1">
+          <mxGeometry height="20" width="35" x="660" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="in1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0;entryY=0.3;align=center;verticalAlign=bottom;" target="box_a0" value="Транспортное средство">
+          <mxGeometry relative="1" x="-0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="120" y="315" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="in2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0;entryY=0.7;align=center;verticalAlign=bottom;" target="box_a0" value="Заявка клиента">
+          <mxGeometry relative="1" x="-0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="120" y="375" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.3;entryY=0;align=left;verticalAlign=middle;" target="box_a0" value="Тарифная политика">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="476" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctrl2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.72;entryY=0;align=left;verticalAlign=middle;" target="box_a0" value="Нормативные документы&#xa;и регламент">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="610" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out1" edge="1" parent="1" source="box_a0" style="endArrow=classic;html=1;strokeWidth=1.5;exitX=1;exitY=0.3;align=center;verticalAlign=bottom;" value="Оплаченный проезд">
+          <mxGeometry relative="1" x="0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="960" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out2" edge="1" parent="1" source="box_a0" style="endArrow=classic;html=1;strokeWidth=1.5;exitX=1;exitY=0.7;align=center;verticalAlign=bottom;" value="Отчётность">
+          <mxGeometry relative="1" x="0.1" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="960" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.22;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="Оператор">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="450" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.5;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="ИС платных дорог">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="540" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mech3" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=1.5;entryX=0.8;entryY=1;align=left;verticalAlign=middle;" target="box_a0" value="Оборудование&#xa;пункта оплаты">
+          <mxGeometry relative="1" x="-0.2" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="636" y="590" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A0" id="pY52CaK28N95DZi2inXV">
+    <mxGraphModel dx="1338" dy="971" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p0" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" value="0.&#xa;ИС платных&#xa;дорог" vertex="1">
+          <mxGeometry height="150" width="150" x="440" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ee_driver" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Водитель" vertex="1">
+          <mxGeometry height="55" width="140" x="100" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ee_oper" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Оператор" vertex="1">
+          <mxGeometry height="55" width="140" x="100" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ee_admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Администратор" vertex="1">
+          <mxGeometry height="55" width="140" x="790" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ee_pay" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Платёжная&#xa;система" vertex="1">
+          <mxGeometry height="55" width="140" x="790" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ds0" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;" value="БД" vertex="1">
+          <mxGeometry height="45" width="140" x="445" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="df1" edge="1" parent="1" source="ee_driver" style="html=1;curved=1;exitX=1;exitY=0.25;entryX=0.1;entryY=0.15;" target="p0" value="Заявка на проезд">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df2" edge="1" parent="1" source="p0" style="html=1;curved=1;exitX=0;exitY=0.35;entryX=0.75;entryY=1;" target="ee_driver" value="Чек">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df3" edge="1" parent="1" source="ee_oper" style="html=1;curved=1;exitX=1;exitY=0.5;entryX=0.1;entryY=0.8;" target="p0" value="Данные о ТС и клиенте">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df4" edge="1" parent="1" source="ee_admin" style="html=1;curved=1;exitX=0;exitY=0.3;entryX=0.9;entryY=0.15;" target="p0" value="Тарифы">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df5" edge="1" parent="1" source="p0" style="html=1;curved=1;exitX=1;exitY=0.35;entryX=0.25;entryY=1;" target="ee_admin" value="Отчёт">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df6" edge="1" parent="1" source="p0" style="html=1;curved=1;exitX=0.9;exitY=0.75;entryX=0;entryY=0.3;" target="ee_pay" value="Платёжные данные">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df7" edge="1" parent="1" source="ee_pay" style="html=1;curved=1;exitX=0;exitY=0.7;entryX=0.75;entryY=0.95;" target="p0" value="Подтверждение оплаты">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df8" edge="1" parent="1" source="p0" style="html=1;startArrow=classic;endArrow=classic;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="ds0" value="Запись / чтение">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Уровень 1" id="j8gdzPNYZu6fiKA3alkO">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1300" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e1_oper" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Оператор" vertex="1">
+          <mxGeometry height="50" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_driver" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Водитель" vertex="1">
+          <mxGeometry height="50" width="120" x="40" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Администратор" vertex="1">
+          <mxGeometry height="50" width="130" x="1120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_pay" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Платёжная система" vertex="1">
+          <mxGeometry height="50" width="130" x="1120" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="pr1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="1.&#xa;Регистрация" vertex="1">
+          <mxGeometry height="110" width="110" x="260" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="pr2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="2.&#xa;Управление&#xa;тарифами" vertex="1">
+          <mxGeometry height="110" width="110" x="860" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="pr3" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="3.&#xa;Фиксация&#xa;проезда" vertex="1">
+          <mxGeometry height="110" width="110" x="260" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pr4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="4.&#xa;Приём&#xa;платежей" vertex="1">
+          <mxGeometry height="110" width="110" x="860" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pr5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="5.&#xa;Отчётность" vertex="1">
+          <mxGeometry height="110" width="110" x="560" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="D1 | Клиенты и ТС" vertex="1">
+          <mxGeometry height="40" width="160" x="235" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="D2 | Тарифы" vertex="1">
+          <mxGeometry height="40" width="150" x="540" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="D3 | Проезды" vertex="1">
+          <mxGeometry height="40" width="150" x="540" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="D4 | Платежи" vertex="1">
+          <mxGeometry height="40" width="150" x="840" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" edge="1" parent="1" source="e1_oper" style="html=1;" target="pr1" value="Данные о ТС и клиенте">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" edge="1" parent="1" source="pr1" style="html=1;" target="d1" value="Сохранение">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" edge="1" parent="1" source="d1" style="html=1;" target="pr3" value="Чтение ТС">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" edge="1" parent="1" source="e1_admin" style="html=1;" target="pr2" value="Тарифы">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" edge="1" parent="1" source="pr2" style="html=1;" target="d2" value="Запись тарифов">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" edge="1" parent="1" source="d2" style="html=1;" target="pr3" value="Ставка за км">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s7" edge="1" parent="1" source="e1_driver" style="html=1;" target="pr3" value="Заявка на проезд">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s8" edge="1" parent="1" source="pr3" style="html=1;" target="d3" value="Запись проезда">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s9" edge="1" parent="1" source="d3" style="html=1;" target="pr4" value="Сумма к оплате">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s10" edge="1" parent="1" source="pr4" style="html=1;" target="e1_pay" value="Платёжные данные">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s11" edge="1" parent="1" source="pr4" style="html=1;" target="d4" value="Запись платежа">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s12" edge="1" parent="1" source="pr4" style="html=1;curved=1;" target="e1_driver" value="Чек">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s13" edge="1" parent="1" source="d3" style="html=1;" target="pr5" value="Данные о проездах">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s14" edge="1" parent="1" source="d4" style="html=1;" target="pr5" value="Данные о платежах">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s15" edge="1" parent="1" source="pr5" style="html=1;curved=1;" target="e1_admin" value="Отчёт">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
