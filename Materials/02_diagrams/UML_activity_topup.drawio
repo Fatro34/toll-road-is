@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="oUbhs_hRwhw82C-a3kBz">
+    <mxGraphModel dx="952" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool2" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=30;horizontalStack=1;html=1;fontStyle=1;fontSize=14;" value="Пополнение счёта клиента" vertex="1">
+          <mxGeometry height="660" width="780" x="60" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_1" parent="pool2" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#f5f5f5;" value="Водитель" vertex="1">
+          <mxGeometry height="630" width="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_start" parent="l2_1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="110" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_choose" parent="l2_1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Выбрать сумму и&#xa;способ оплаты" vertex="1">
+          <mxGeometry height="50" width="160" x="45" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_err" parent="l2_1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Получить уведомление&#xa;об ошибке оплаты" vertex="1">
+          <mxGeometry height="50" width="160" x="45" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="t_rcpt" parent="l2_1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Получить электронный чек" vertex="1">
+          <mxGeometry height="45" width="160" x="45" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="t_end" parent="l2_1" style="ellipse;html=1;shape=doubleEllipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="110" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="tf1" edge="1" parent="l2_1" source="t_start" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_choose">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf8" edge="1" parent="l2_1" source="t_rcpt" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf9" edge="1" parent="l2_1" source="t_err" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="t_end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="365" />
+              <mxPoint x="25" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2_2" parent="pool2" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#ffffff;" value="Система (ИС платных дорог)" vertex="1">
+          <mxGeometry height="630" width="270" x="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_req" parent="l2_2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Сформировать запрос&#xa;на оплату" vertex="1">
+          <mxGeometry height="50" width="160" x="55" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="t_credit" parent="l2_2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Зачислить сумму на баланс&#xa;и записать платёж в БД" vertex="1">
+          <mxGeometry height="50" width="180" x="45" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="l2_3" parent="pool2" style="swimlane;startSize=30;html=1;fontStyle=1;fillColor=#f5f5f5;" value="Платёжная система" vertex="1">
+          <mxGeometry height="630" width="260" x="520" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t_proc" parent="l2_3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Обработать платёж" vertex="1">
+          <mxGeometry height="50" width="150" x="55" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="t_dec" parent="l2_3" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Платёж&#xa;успешен?" vertex="1">
+          <mxGeometry height="75" width="120" x="70" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="tf4" edge="1" parent="l2_3" source="t_proc" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_dec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf2" edge="1" parent="pool2" source="t_choose" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_req">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf3" edge="1" parent="pool2" source="t_req" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_proc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf5" edge="1" parent="pool2" source="t_dec" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_err" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf6" edge="1" parent="pool2" source="t_dec" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_credit" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tf7" edge="1" parent="pool2" source="t_credit" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="t_rcpt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
