@@ -13,3 +13,4 @@ SHA256: 00BB5036CFDB73733CD9ABCA02A9063FC18C4FCB93A5DD7722E7D97DF9B9D5CB
 Сборка: msbuild POSINV.sln /t:Rebuild /p:Configuration=Debug
 Запуск: POSINV\bin\Debug\POSINV.exe
 Ограничения: в приложении нет авторизации и ролей; тарифы заданы в методе LoadProducts; обмен данными между ПК не проверялся (SQLite, файл БД)
+Архитектура ОС: Windows ARM64
